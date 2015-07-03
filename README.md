@@ -42,7 +42,7 @@ cp -R ${EXCAVATOR} .
 ./DO.70.TargetPerla.sh
 ```
 
-And run the main code.
+And run the main code. (It takes about half an hour.)
 ```
 ./DO.80.ReadPerla.sh
 ```
