@@ -1,0 +1,6 @@
+#!/bin/sh
+SRC='/DATA/CUK/Somatic_Copy_Number_Alteration'
+DST='.'
+rm ucsc.hg19.fasta SureSelect_Human_All_Exon_50M.bed
+ln -s $SRC/human.genome/ucsc.hg19.fasta $DST/
+ln -s $SRC/bed/SureSelect_Human_All_Exon_50M.bed $DST/

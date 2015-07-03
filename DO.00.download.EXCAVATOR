@@ -1,0 +1,22 @@
+#!/bin/sh
+# download and untar
+wget http://downloads.sourceforge.net/project/excavatortool/EXCAVATOR_Package_v2.2.tgz
+tar zxvf EXCAVATOR_Package_v2.2.tgz
+# set.path.to.EXCAVATOR
+echo "export PATH=\$PATH:"`pwd`"/EXCAVATOR_Package_v2.2/EXCAVATOR/" >> ~/.bash_profile
+
+# download mappability information file
+#wget http://grimmond.imb.uq.edu.au/uniqueome/downloads/hg19_uniqueome.coverage.base-space.25.1.Wig.gz
+#gunzip hg19_uniqueome.coverage.base-space.25.1.Wig.gz
+#mv hg19_uniqueome.coverage.base-space.25.1.Wig uniqueome.coverage.base-space.25.1.wig
+ln -s /DATA/CUK/Somatic_Copy_Number_Alteration/hg19_uniqueome.coverage.base-space.25.1.wig uniqueome.coverage.base-space.25.1.wig
+
+# install R Hmisc package
+# type following R command after executing R 
+# > install.package("Hmisc")
+
+# compile fortran code
+# cd path.to.EXCAVATOR/lib
+# R CMD SHLIB F4R.f
+
+# R CMD SHLIB FastJointSLMLibraryI.f
