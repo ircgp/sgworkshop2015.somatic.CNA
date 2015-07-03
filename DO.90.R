@@ -1,5 +1,3 @@
-setwd("/dlabs/project/Clear_Cell_Ovarian_Carcinoma/2015.02.24_CNA_calling_using_EXCAVATOR/")
-
 library(GenomicRanges)
 library(sqldf)
 library(data.table)
